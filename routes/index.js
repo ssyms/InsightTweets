@@ -75,7 +75,7 @@ router.post('/profile', function(req, res, next) {
     params.content_items = data.map(toContentItem);
     get_insights(params);
   });
-  setTimeout(function() {console.log("waited"); res.render('profile', { title: req.body.username, json: my_insights});}, 3000);
+  setTimeout(function() {console.log("waited"); res.render('profile', { title: req.body.username, json: my_insights});}, 5000);
 
 });
 
