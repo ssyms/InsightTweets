@@ -1,0 +1,228 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url("../images/geometry2.png");
+  background-color: #cccccc;
+  background-repeat: repeat;
+  background-attachment: fixed;
+
+}
+
+a {
+  color: #00B7FF;
+}
+
+h4 {
+    font-family: 'Roboto';
+    font-size: 18px;
+    text-align: center;
+}
+
+#graph-container {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+
+.node circle {
+  cursor: pointer;
+  stroke: #3182bd;
+  stroke-width: 1.5px;
+}
+
+.node text {
+  font: 10px sans-serif;
+  pointer-events: none;
+  text-anchor: middle;
+}
+
+line.link {
+  fill: none;
+  stroke: #9ecae1;
+  stroke-width: 1.5px;
+}
+
+.title {
+  font-family: 'Roboto';
+  font-size: 72px;
+  text-align: center;
+  color: #ff6f69;
+}
+
+.center-container {
+  text-align: center;
+  padding-top: 80px;
+}
+
+/* simple */
+ .simple-input {
+    padding-top: 8px;
+    padding-bottom: 2px;
+    padding-left: 8px;
+    border: 2px solid #ffcc5c;
+    border-radius: 5px;
+    color: #333;
+    transition: all 0.3s ease-out;
+    height: 30px;
+    width: 300px;
+    font-size: 20px;
+
+}
+.simple-input:hover {
+    border-radius: 5px
+}
+.simple-input:focus {
+    outline: none;
+    border-radius: 5px;
+    border-color: #EBD292;
+}
+
+.highest {
+  font-size: 24px;
+}
+
+.myTraits {
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
+.traitList {
+  font-family: 'Roboto';
+  font-size: 18px;
+}
+
+.btn {
+  background: #96ceb4;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  font-size: 18px;
+  text-decoration: none;
+  height: 43px;
+  margin-left: 25px;
+  width: 125px;
+}
+
+.btn:hover {
+  background: #88d8b0;
+  text-decoration: none;
+}
+
+.back {
+  background: #96ceb4;
+  border-radius: 5px;
+  border: 0px;
+  font-family: 'Roboto';
+  color: #ffffff;
+  font-weight: 700;
+  letter-spacing: .1rem;
+  font-size: 18px;
+  text-decoration: none;
+  height: 43px;
+  margin: auto 0;
+  width: 125px;
+}
+
+.back:hover {
+  background: #88d8b0;
+  text-decoration: none;
+}
+
+.center-me
+{
+     margin: 0 auto;
+     width: 125px;
+}
+
+.center-me2
+{
+     margin: 0 auto;
+     width: 400px;
+}
+
+.ct-chart {
+  height: 400px;
+  width: 400px;
+  font-size: 18px;
+  margin: auto 0;
+}
+
+.donutClass0 {
+  stroke: #88d8b0;
+}
+.donutClass1 {
+  stroke: #ffcc5c;
+}
+.donutClass2 {
+  stroke: #ff6f69;
+}
+.donutClass3 {
+  stroke: #00ced1;
+}
+.donutClass4 {
+  stroke: #79ba7f;
+}
+.donutClass5 {
+  stroke: #ffc3a0;
+}
+.donutClass6 {
+  stroke: #fa8072;
+}
+.donutClass7 {
+  stroke: #fa8072;
+}
+
+.ct-label {
+  font-size: 24px;
+}
+
+.center-me3
+{
+     margin: 0 auto;
+     width: 600px;
+}
+
+.ct-chart-bar {
+  height: 300px;
+  width: 600px;
+  font-size: 18px;
+  margin: auto 0;
+}
+
+.val {
+
+      font-family: 'Roboto';
+      font-size: 18px;
+      text-align: center;
+}
+
+.cred {
+    bottom: 0;
+    font-family: 'Roboto';
+    font-size: 12px;
+    text-align: center;
+    color: #555555;
+}
+
+.fa.fa-twitter {
+  color: #5bc0de;
+}
+
+.ct-chart-bar .ct-series.ct-series-a .ct-bar {
+  stroke: #ff6f69;
+}

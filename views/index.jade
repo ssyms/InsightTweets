@@ -1,0 +1,30 @@
+extends layout
+block extra-header
+  link(rel='stylesheet', href='/stylesheets/index.css')
+
+block content
+  script(src='http://code.jquery.com/jquery-1.9.1.js')
+  script(type="text/javascript").
+    var loading = false;
+    var update_loading = function() {
+      console.log("updating");
+      $("#myLoading").append("<i class='fa fa-refresh fa-spin fa-3x fa-fw'></i>");
+    }
+  .center-container
+    i.fa.fa-twitter.fa-4x(aria-hidden='true', color='#88d8b0')
+    .row.sub-text
+      .col-md-12
+        h4
+          | Enter your Twitter handle to find out what your tweets reveal about you!
+    form(method='post', action='/profile')
+      .row.twitter-submission
+        .col-md-12
+          span.h4
+          input.paragraph.form-control.simple-input(type='text', value='#{user ? user.screen_name : "" }', name='username', placeholder='Your Twitter handle...', required)
+          button.button.h4.btn(type='submit', onclick='update_loading()') Find Me!
+          br
+          br
+          br
+          #myLoading
+
+  h5.cred Made for Boston SheHacks 2018 by Radhika Hegde, Diana Kolusheva, Joanna Markow, Pooja Mistry, Sarada Symonds, and Sandra Zhen
