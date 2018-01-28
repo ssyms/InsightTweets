@@ -1,12 +1,11 @@
 extends layout
 
 block content
-  script(src='http://code.jquery.com/jquery-1.9.1.js')
+  script(src='/javascripts/jquery-1.9.1.js')
   script(src='https://d3js.org/d3.v3.min.js')
-  script(type='text/javascript', src='/javascripts/sigma.min.js')
-  script(src='http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.js')
-  link(href='http://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css', rel='stylesheet', type='text/css')
-  link(href='http://fonts.googleapis.com/css?family=Oxygen:300', rel='stylesheet', type='text/css')
+  script(src='/javascripts/chartist.min.js')
+  link(href='/stylesheets/chartist.min.css', rel='stylesheet', type='text/css')
+  link(href='https://fonts.googleapis.com/css?family=Oxygen:300', rel='stylesheet', type='text/css')
   script(type="text/javascript").
     var data = !{json}
   h4 Hello there, @#{title}! Here's what we learned about you.
