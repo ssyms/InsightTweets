@@ -60,11 +60,12 @@ router.get('/', function(req, res, next) {
 router.post('/profile', function(req, res, next) {
   console.log(req.body);
   var Twit = require('twit');
+  // UPDATE CREDENTIALS HERE
   var T = new Twit({
-    consumer_key: 'pY2FCyJlHkbfZh5k7zzTAl957',
-    consumer_secret: 'lehQuMJRkae5kjEkn67WKIcjaHX37iwsLkOtwzDtyp2wMEH4Bx',
-    access_token: '155794248-o0GuQi1zdyTZGmR9XeGJEO0X3NWljbhGzNCQSqI6',
-    access_token_secret: 'i0JA19er0lYZWZkerCarEF7WGotkunFHdBKUkt7axvsXy'
+    consumer_key: 'abcde',
+    consumer_secret: 'abcde',
+    access_token: 'abcde',
+    access_token_secret: 'abcde'
   })
 
   var options = { screen_name: req.body.username,
